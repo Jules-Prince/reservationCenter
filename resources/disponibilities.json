@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "date": "2025-01-25",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "isBooked": false
+  },
+  {
+    "id": "1",
+    "date": "2025-01-25",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "isBooked": false
+  },
+  {
+    "id": "1",
+    "date": "2025-01-25",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "isBooked": false
+  },
+  {
+    "id": "1",
+    "date": "2025-01-25",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "isBooked": false
+  },
+  {
+    "id": "1",
+    "date": "2025-01-25",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "isBooked": false
+  },
+  {
+    "id": "1",
+    "date": "2025-01-25",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "isBooked": false
+  }
+]
