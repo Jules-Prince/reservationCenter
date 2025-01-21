@@ -1,0 +1,81 @@
+# Keep "OS" and "IDE and local environment" ignores on your local machine in user home
+# git config --global core.excludesFile ~/.gitignore
+# https://git-scm.com/docs/gitignore
+
+# OS
+**/.DS_Store
+etc
+temp
+.history
+.lh
+*.
+**/*.log
+*.node
+
+# Application
+qwik-app/
+/server/
+/starters/**/server/
+/packages/*/server/
+!/packages/qwik/server/
+/packages/*/src/styled-system/
+todo-express/
+target
+!/packages/docs/src/routes/demo/events/target
+src/napi/package-*
+
+# Node
+node_modules
+
+# Artifacts
+tsc-out
+dist
+dist-dev
+external
+lib
+tsdoc-metadata.json
+packages/qwik/bindings
+
+# IDE and local environment
+.idea
+.eslintcache
+test-results
+.direnv
+
+# Package Managers
+.yarn/*
+!.yarn/releases
+.pnpm-store/*
+
+# Local Netlify folder
+.netlify
+sandbox
+
+# We need to ignore this because "changesets" will try to replace it
+/CHANGELOG.md
+
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
