@@ -14,6 +14,14 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
 
+  frontend:
+    image: hexagone/reservation_center-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+
   redis:
     image: redis:7-alpine
     container_name: redis
@@ -21,6 +29,8 @@ services:
       - "6379:6379" # Map container port 6379 to host port 6379
     volumes:
       - redis_data:/data # Persist Redis data
+
+  
 
 volumes:
   redis_data:
